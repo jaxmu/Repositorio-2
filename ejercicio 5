@@ -1,0 +1,9 @@
+def sum_ten(original_value):
+    def add(value):
+        return value + 14 + original_value
+    return add
+
+
+add_closure = sum_ten(5)
+print(add_closure(3))
+print((sum_ten(2))(1))
